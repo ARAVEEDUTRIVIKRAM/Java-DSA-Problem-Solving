@@ -1,0 +1,19 @@
+package com.Level01_Java_Fundamentals.ifelse;
+import java.util.Scanner;
+
+// Read age and print:- < 13 → "Child"  , 13–19 → "Teen" , >= 20 → "Adult"
+
+public class AgeProblem {
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        if(age<13){
+            System.out.println("Child");
+        }else if(age >= 13 && age <=19) {
+            System.out.println("Teen");
+        }else{
+            System.out.println("Adult");
+        }
+
+    }
+}
